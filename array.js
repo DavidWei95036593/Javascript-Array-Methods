@@ -34,20 +34,19 @@ function findNum(array){
 
 }
 //question 3
+//helper method for keepLarge
+function isBigEnough(value){
+  return value >=100;
+}
 function keepLarge(array){
-  for (let i = 0; i < array.length; i++) {
-    if(array[i] >=100){
-      console.log(array[i]);
-    }
-  }
-
-
+  return array.filter(isBigEnough);
 }
 //question 4
-function removeNum(array){
-  for (let i = 0; i < array.length; i++) {
-
-  }
+function removeDatNum(value,integer){
+  return value != integer;
+}
+function removeNum(array,integer){
+  return array.filter(removeDatNum);
 }
 
-console.log(keepLarge(array));
+console.log(removeNum(array,4));
