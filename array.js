@@ -12,8 +12,9 @@
 //4. Write a function called removeNum that takes an array of numbers and an integer.
 //The function removes the number from the array and returns the resulting array.
 
+
 //sample array
-const array=[63,2,3,4,5,6,751,8];
+const array=[63,2,3,4,5,6,751,800];
 //question 1
 function numSorter(array) {
   for (let i = 0; i < array.length; i++) {
@@ -31,7 +32,6 @@ function findNum(array){
       return null;
     }
   }
-
 }
 //question 3
 //helper method for keepLarge
@@ -41,11 +41,13 @@ function isBigEnough(value){
 function keepLarge(array){
   return array.filter(isBigEnough);
 }
+
 //question 4
-//helper method for removeNum
 function removeNum(array,integer){
   return array.filter(numbers => numbers != integer);
 }
+
+//codes for testing
 console.log(numSorter(array));
 console.log(findNum(array));
 console.log(keepLarge(array));
