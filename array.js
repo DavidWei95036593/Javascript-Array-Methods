@@ -42,11 +42,11 @@ function keepLarge(array){
   return array.filter(isBigEnough);
 }
 //question 4
-function removeDatNum(value,integer){
-  return value != integer;
-}
+//helper method for removeNum
 function removeNum(array,integer){
-  return array.filter(removeDatNum);
+  return array.filter(numbers => numbers != integer);
 }
-
+console.log(numSorter(array));
+console.log(findNum(array));
+console.log(keepLarge(array));
 console.log(removeNum(array,4));
