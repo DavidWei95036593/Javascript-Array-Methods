@@ -11,26 +11,43 @@
 
 //4. Write a function called removeNum that takes an array of numbers and an integer.
 //The function removes the number from the array and returns the resulting array.
-const array=[1,2,3,4,5,6,7,8];
+
+//sample array
+const array=[63,2,3,4,5,6,751,8];
+//question 1
 function numSorter(array) {
   for (let i = 0; i < array.length; i++) {
     array[i] = array[i] * array[i];
   }
   return array;
 }
+//question 2
 function findNum(array){
   for (let i = 0; i < array.length; i++) {
-
+    if(array[i]%7 ==0&& array[i]%9 ==0){
+      return array[i];
+    }
+    else{
+      return null;
+    }
   }
+
 }
+//question 3
 function keepLarge(array){
   for (let i = 0; i < array.length; i++) {
-
+    if(array[i] >=100){
+      console.log(array[i]);
+    }
   }
+
+
 }
+//question 4
 function removeNum(array){
   for (let i = 0; i < array.length; i++) {
 
   }
 }
-console.log(numSorter(array));
+
+console.log(keepLarge(array));
