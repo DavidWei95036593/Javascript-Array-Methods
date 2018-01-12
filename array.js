@@ -51,4 +51,5 @@ function removeNum(array,integer){
 console.log(numSorter(array));
 console.log(findNum(array));
 console.log(keepLarge(array));
+//this will remove number 4 in the array                                                  sorry about that number 4
 console.log(removeNum(array,4));
